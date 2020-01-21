@@ -1,0 +1,22 @@
+{
+  "name": "fantaq-animation",
+  "version": "1.0.0",
+  "description": "Fantaq (IG: fantaq.sa) logo animation",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hakeemmidan/fantaq-animation.git"
+  },
+  "author": "Hakeem Almidan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hakeemmidan/fantaq-animation/issues"
+  },
+  "homepage": "https://github.com/Hakeemmidan/fantaq-animation#readme"
+}
