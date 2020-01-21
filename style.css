@@ -1,0 +1,75 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.sub-container {
+  display: inline-block;
+  background-color: #6bc7ec;
+  padding-right: 16px;
+  border-radius: 50%;
+  padding-bottom: 11px;
+  padding-top: 3px; }
+
+.dark-innerbulb {
+  animation: dark-innerbulb-anim 1.5s 2.0s; }
+
+.light-innerbulb {
+  animation: light-innerbulb-anim 1.5s 2.0s; }
+
+.light-reflection {
+  animation: light-reflection-anim 1.5s 2.0s;
+  fill: white; }
+
+#svg-drawing {
+  display: block;
+  margin: 0 auto;
+  background-color: skyblue;
+  border-radius: 50%;
+  animation: light ease-in 3.0s; }
+
+#arrow-svg {
+  position: absolute;
+  top: 24px; }
+
+#arrow1 {
+  opacity: 0.0;
+  fill: #6bc7ec;
+  animation: arrow-color 2.5s; }
+
+#arrow2 {
+  opacity: 0.0;
+  fill: #6bc7ec;
+  animation: arrow-color 2.5s; }
+
+@keyframes arrow-color {
+  0% {
+    opacity: 1.0;
+    fill: #efca5c; }
+  100% {
+    fill: #6bc7ec; } }
+
+@keyframes light {
+  0% {
+    opacity: 0.0; }
+  85% {
+    opacity: 0.0; }
+  100% {
+    background-color: #6bc7ec;
+    visibility: visible; } }
+
+@keyframes light-innerbulb-anim {
+  100% {
+    fill: lightgray; } }
+
+@keyframes dark-innerbulb-anim {
+  100% {
+    fill: gray; } }
+
+@keyframes light-reflection-anim {
+  100% {
+    opacity: 0.0; } }
+
+@keyframes dark-light-reflection {
+  100% {
+    fill: gray; } }
