@@ -21,6 +21,9 @@
   animation: light-reflection-anim 1.5s 2.0s;
   fill: white; }
 
+#dark-light-reflection {
+  animation: dark-light-reflection 1.5s 2.0s; }
+
 #svg-drawing {
   display: block;
   margin: 0 auto;

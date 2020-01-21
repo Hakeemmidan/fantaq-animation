@@ -1,5 +1,4 @@
 $dark-skyblue: #6bc7ec;
-
 .main-container {
   display: flex;
   justify-content: center;
@@ -20,10 +19,15 @@ $dark-skyblue: #6bc7ec;
 }
 
 .wire-and-logo-name {
+  animation: wire-and-logo-name 1.5s 2.0s;
 }
 
 .light-innerbulb {
   animation: light-innerbulb-anim 1.5s 2.0s;
+}
+
+#dark-light-reflection {
+  animation: dark-light-reflection 1.5s 2.0s;
 }
 
 .light-reflection {
@@ -84,9 +88,14 @@ $dark-skyblue: #6bc7ec;
 }
 
 @keyframes light-reflection-anim {
-  100% {opacity: 0.0;}
+  100% {fill: lightgray;}
 }
 
 @keyframes dark-light-reflection {
+  100% {fill: gray;}
+}
+
+
+@keyframes wire-and-logo-name {
   100% {fill: gray;}
 }
