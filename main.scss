@@ -1,4 +1,5 @@
 $dark-skyblue: #6bc7ec;
+
 .main-container {
   display: flex;
   justify-content: center;
@@ -15,7 +16,7 @@ $dark-skyblue: #6bc7ec;
 }
 
 .dark-innerbulb {
-  animation: dark-innerbulb-anim 1.5s 2.0s;
+  animation: light-reflection-anim 1.5s 2.0s;
 }
 
 .wire-and-logo-name {
@@ -24,10 +25,6 @@ $dark-skyblue: #6bc7ec;
 
 .light-innerbulb {
   animation: light-innerbulb-anim 1.5s 2.0s;
-}
-
-#dark-light-reflection {
-  animation: dark-light-reflection 1.5s 2.0s;
 }
 
 .light-reflection {
@@ -40,7 +37,7 @@ $dark-skyblue: #6bc7ec;
   margin: 0 auto;
   background-color: skyblue;
   border-radius: 50%;
-  animation: light ease-in 3.0s;
+  animation: light 2.5s, light-background 1.5s 2.0s;
 }
 
 #arrow-svg {
@@ -73,13 +70,11 @@ $dark-skyblue: #6bc7ec;
 @keyframes light {
   0% {opacity: 0.0;}
   85% {opacity: 0.0;}
-  100% {
-    background-color: $dark-skyblue;
-    visibility: visible;
-  }
+  100% { opacity: 1.0;}
 }
 
 @keyframes light-innerbulb-anim {
+  0% {fill: lightgray;}
   100% {fill: lightgray;}
 }
 
@@ -88,14 +83,15 @@ $dark-skyblue: #6bc7ec;
 }
 
 @keyframes light-reflection-anim {
+  0% {fill: lightgray;}
   100% {fill: lightgray;}
 }
 
-@keyframes dark-light-reflection {
+@keyframes wire-and-logo-name {
   100% {fill: gray;}
 }
 
-
-@keyframes wire-and-logo-name {
-  100% {fill: gray;}
+@keyframes light-background {
+  0% {background-color: $dark-skyblue;}
+  100% {background-color: $dark-skyblue;}
 }
