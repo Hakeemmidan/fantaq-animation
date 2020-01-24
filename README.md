@@ -1,4 +1,5 @@
 ## GIF
+<img height="250px" src="assets/fantaq-logo-anim.gif"/>
 
 ## Tech Stack
 (This a frontend project; there is no backend or database)
