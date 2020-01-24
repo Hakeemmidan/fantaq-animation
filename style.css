@@ -1,7 +1,8 @@
 .main-container {
   display: flex;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  margin-top: 70px; }
 
 .sub-container {
   display: inline-block;
@@ -15,7 +16,7 @@
   animation: light-reflection-anim 1.5s 2.0s; }
 
 .wire-and-logo-name {
-  animation: wire-and-logo-name 1.5s 2.0s; }
+  animation: wire-and-logo-name 2.0s 1.5s; }
 
 .light-innerbulb {
   animation: light-innerbulb-anim 1.5s 2.0s; }
