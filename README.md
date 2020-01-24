@@ -1,3 +1,6 @@
+[Live (with sound)](https://hakeemmidan.github.io/fantaq-animation/)
+
+
 ## GIF
 <img height="250px" src="assets/fantaq-logo-anim.gif"/>
 

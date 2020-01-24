@@ -4,15 +4,16 @@ $dark-skyblue: #4cb6e0;
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 70px;
 }
 
 .sub-container {
   display: inline-block;
-    background-color: $dark-skyblue;
-    padding-right: 16px;
-    border-radius: 50%;
-    padding-bottom: 11px;
-    padding-top: 3px;
+  background-color: $dark-skyblue;
+  padding-right: 16px;
+  border-radius: 50%;
+  padding-bottom: 11px;
+  padding-top: 3px;
 }
 
 .dark-innerbulb {
