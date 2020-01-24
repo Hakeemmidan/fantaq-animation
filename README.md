@@ -1,5 +1,7 @@
 [Live (with sound)](https://hakeemmidan.github.io/fantaq-animation/)
 
+[CodePen Collection](https://codepen.io/collection/DJObvB) (Includes varying animations of the same logo)
+
 
 ## GIF
 <img height="250px" src="assets/fantaq-logo-anim.gif"/>
