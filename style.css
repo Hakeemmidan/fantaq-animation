@@ -5,14 +5,17 @@
 
 .sub-container {
   display: inline-block;
-  background-color: #6bc7ec;
+  background-color: #4cb6e0;
   padding-right: 16px;
   border-radius: 50%;
   padding-bottom: 11px;
   padding-top: 3px; }
 
 .dark-innerbulb {
-  animation: dark-innerbulb-anim 1.5s 2.0s; }
+  animation: light-reflection-anim 1.5s 2.0s; }
+
+.wire-and-logo-name {
+  animation: wire-and-logo-name 1.5s 2.0s; }
 
 .light-innerbulb {
   animation: light-innerbulb-anim 1.5s 2.0s; }
@@ -21,15 +24,12 @@
   animation: light-reflection-anim 1.5s 2.0s;
   fill: white; }
 
-#dark-light-reflection {
-  animation: dark-light-reflection 1.5s 2.0s; }
-
 #svg-drawing {
   display: block;
   margin: 0 auto;
   background-color: skyblue;
   border-radius: 50%;
-  animation: light ease-in 3.0s; }
+  animation: light 2.5s, light-background 1.5s 2.0s; }
 
 #arrow-svg {
   position: absolute;
@@ -37,12 +37,12 @@
 
 #arrow1 {
   opacity: 0.0;
-  fill: #6bc7ec;
+  fill: #4cb6e0;
   animation: arrow-color 2.5s; }
 
 #arrow2 {
   opacity: 0.0;
-  fill: #6bc7ec;
+  fill: #4cb6e0;
   animation: arrow-color 2.5s; }
 
 @keyframes arrow-color {
@@ -50,7 +50,7 @@
     opacity: 1.0;
     fill: #efca5c; }
   100% {
-    fill: #6bc7ec; } }
+    fill: #4cb6e0; } }
 
 @keyframes light {
   0% {
@@ -58,10 +58,11 @@
   85% {
     opacity: 0.0; }
   100% {
-    background-color: #6bc7ec;
-    visibility: visible; } }
+    opacity: 1.0; } }
 
 @keyframes light-innerbulb-anim {
+  0% {
+    fill: lightgray; }
   100% {
     fill: lightgray; } }
 
@@ -70,9 +71,17 @@
     fill: gray; } }
 
 @keyframes light-reflection-anim {
+  0% {
+    fill: lightgray; }
   100% {
-    opacity: 0.0; } }
+    fill: lightgray; } }
 
-@keyframes dark-light-reflection {
+@keyframes wire-and-logo-name {
   100% {
     fill: gray; } }
+
+@keyframes light-background {
+  0% {
+    background-color: #4cb6e0; }
+  100% {
+    background-color: #4cb6e0; } }
