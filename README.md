@@ -7,12 +7,14 @@
 <img height="250px" src="assets/fantaq-logo-anim.gif"/>
 
 ## Tech Stack
-(This a frontend project; there is no backend or database)
-- Sass
-- CSS
-- GSAP
-- HTML
-- JavaScript
+- Database: N/A
+- Backend: N/A
+- Frontend:
+  - Sass
+  - CSS
+  - GSAP
+  - HTML
+  - JavaScript
 
 ## Installation
 - `npm install`
